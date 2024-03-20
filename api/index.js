@@ -8,7 +8,7 @@ const app = express();
 
 mongoose
     .connect(process.env.MONGO) 
-    .then(()=>console.log('connected to MONGO'))
+    .then(()=>console.log('Connected to MONGO'))
     .catch((err)=>console.log(err));
 
 
