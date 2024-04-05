@@ -26,7 +26,7 @@ export default function Profile() {
         <input
           type="password"
           id="password"
-          placeholder="password"
+          placeholder="password" 
           className="border p-3 rounded-lg"
         />
         <button className="bg-slate-700 p-3 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80">
@@ -34,8 +34,8 @@ export default function Profile() {
         </button>
       </form>
       <div className="flex justify-between mt-5">
-        <span className="text-red-700 cursor-pointer lowercase">Delete Account</span>
-        <span className="text-red-700 cursor-pointer lowercase">Sign Out</span>
+        <span className="text-red-700 cursor-pointer ">Delete Account</span>
+        <span className="text-red-700 cursor-pointer ">Sign Out</span>
       </div>
     </div>
   );
