@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import OAuth from "../components/OAuth";
 export default function SignUp() {
   const [formData, setFormData] = useState({});
   const [Error, setError] = useState(null);
@@ -17,7 +18,7 @@ export default function SignUp() {
       setLoading(true);
       const res = await fetch("/api/auth/signup", {
         method: "POST",
-        headers: {
+        headers: { 
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
@@ -69,6 +70,7 @@ export default function SignUp() {
         >
           {Loading ? "Loading... " : "Sign up"}
         </button>
+        <OAuth/>
       </form>
       <div className="flex gap-2 mt-5">
         <p>Have an account?</p>
